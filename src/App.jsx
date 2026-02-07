@@ -445,22 +445,10 @@ export default function ValentineProposal() {
                 fontStyle: "italic",
                 color: "#a4133c",
                 marginBottom: "24px",
-                maxWidth: "480px",
                 lineHeight: 1.6,
               }}
             >
               {message}
-            </p>
-
-            <p
-              style={{
-                fontSize: "1rem",
-                color: "#c9184a",
-                fontWeight: 500,
-                opacity: 0.8,
-              }}
-            >
-              Happy Valentine's Day, my love 🌹
             </p>
 
             {dodgeCount > 0 && (
