@@ -13,13 +13,14 @@ const LOVE_MESSAGES = [
   "Wrong button, dodo! 🥰",
   "Oh mennu kehndi na na na na! 💗",
   "Sachi muchi? 👉👈",
+  "Baby Girl meri ban jao! 🥰",
   "Mujhe Apna Banana Hai! 💘",
   "I promise to love you forever! 🌸",
   "Tere bina jeena mushkil hai! 💞",
 ];
 
 const ACCEPTED_MESSAGES = [
-  "Yayyyy Maan Gayi! 💖",
+  "Meri Baby Maan Gayi! 💖",
   "I am the Luckiest Guy! 🥰",
   "Best Valentine's Day ever! 🌹",
   "My heart is doing backflips! 💕",
