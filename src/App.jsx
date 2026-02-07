@@ -1,21 +1,26 @@
 import { useState, useRef, useCallback } from "react";
+import teddyImage from "./assets/teddy_proposing.png"; 
+
 
 const LOVE_MESSAGES = [
   "Are you sure? 🥺",
-  "Think again... 💕",
+  "Mujhse pyaar nahi karti?... 💕",
   "Pretty please? 🌹",
-  "You can't catch me! 😜",
+  "Babiluuuuuu! 🥺",
   "Try clicking Yes instead! 💖",
-  "Nope, not happening! 🦋",
+  "Acha Maan Jao Abhi! 🦋",
   "The universe says Yes! ✨",
-  "Wrong button, silly! 🥰",
-  "My heart says otherwise! 💗",
-  "One more try? 👉👈",
+  "Wrong button, dodo! 🥰",
+  "Oh mennu kehndi na na na na! 💗",
+  "Sachi muchi? 👉👈",
+  "Mujhe Apna Banana Hai! 💘",
+  "I promise to love you forever! 🌸",
+  "Tere bina jeena mushkil hai! 💞",
 ];
 
 const ACCEPTED_MESSAGES = [
-  "I knew you'd say yes! 💖",
-  "You just made me the happiest! 🥰",
+  "Yayyyy Maan Gayi! 💖",
+  "I am the Luckiest Guy! 🥰",
   "Best Valentine's Day ever! 🌹",
   "My heart is doing backflips! 💕",
 ];
@@ -79,7 +84,7 @@ export default function ValentineProposal() {
     const newY = Math.random() * maxY + padding;
 
     setNoPosition({ x: newX, y: newY });
-    setYesScale((prev) => Math.min(prev * 1.1, 3.5));
+    setYesScale((prev) => Math.min(prev * 1.5, 6.5));
     setDodgeCount((prev) => prev + 1);
     setMessage(LOVE_MESSAGES[Math.floor(Math.random() * LOVE_MESSAGES.length)]);
   }, []);
@@ -255,7 +260,15 @@ export default function ValentineProposal() {
                 filter: "drop-shadow(0 4px 20px rgba(255, 51, 102, 0.3))",
               }}
             >
-              💝
+              <img 
+                src={teddyImage} 
+                alt="Teddy bear with heart" 
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
 
             {/* Title */}
@@ -270,7 +283,7 @@ export default function ValentineProposal() {
                 textShadow: "0 2px 10px rgba(164, 19, 60, 0.1)",
               }}
             >
-              Hey Beautiful
+              My Beautiful Chitti, The Love of My Life
             </h1>
 
             <p
@@ -282,7 +295,6 @@ export default function ValentineProposal() {
                 color: "#c9184a",
                 marginBottom: "48px",
                 lineHeight: 1.5,
-                maxWidth: "500px",
               }}
             >
               Will you be my Valentine? 🌹
