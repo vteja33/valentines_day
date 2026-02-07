@@ -85,7 +85,7 @@ export default function ValentineProposal() {
     const newY = Math.random() * maxY + padding;
 
     setNoPosition({ x: newX, y: newY });
-    setYesScale((prev) => Math.min(prev * 1.5, 6.5));
+    setYesScale((prev) => Math.min(prev * 1.3, 4.5));
     setDodgeCount((prev) => prev + 1);
     setMessage(LOVE_MESSAGES[Math.floor(Math.random() * LOVE_MESSAGES.length)]);
   }, []);
